@@ -8,8 +8,9 @@
 <script language="JavaScript" type="text/javascript"> 
 	function myOnLoadFunction() {
 		var name = prompt("what is your name");
-		var myWindow = window.open("", "name", "width=200,height=100");
+		//var myWindow = window.open("", name, "width=200,height=100");
 		myWindow.document.write("<p>Welcome: " + myWindow.name + "</p>");
+		window.status = name;
 
 }
 	
@@ -67,7 +68,7 @@
 
 <body language="Javascript" onload="myOnLoadFunction()" onunload="myOnUnloadFunction()"> 
 	
-<img href="http://www.google.com" id="Plant1Text" alt="	Plant 1" src="plant3.jpg" width="300" onmouseover="Plant1Text(this)" onClick="linkSomePage"> <br>
+<img id="Plant1Text" alt="	Plant 1" src="plant3.jpg" width="300" onmouseover="Plant1Text(this)"> <br>
 
 <img id="Plant2Text" alt="Plant 2" src="plant2.jpg"  width="300" onmouseover="Plant2Text(this)"> <br>
 

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Performance Quiz 3</title>
+	<!-- Author: Yanel Pinto -->
+
+<script language="JavaScript" type="text/javascript"> 
+	function myOnLoadFunction() {
+		var name = prompt("what is your name");
+		var myWindow = window.open("", name, "width=200,height=100");
+		myWindow.document.write("<p>Welcome: " + name + "</p>");
+		myWindow.status = name;
+
+}
+	
+	function PlantDesc (plantID){
+		alert (plants[0][plantID-1]);
+	}
+</script>
+</head>
+
+<body language="Javascript" onload="myOnLoadFunction()" onunload="myOnUnloadFunction()"> 
+	
+<script>
+var plants = new Array();
+//Setup Description Array
+plants[0] = new Array("I love this plant!", "Test2", "Test3", "Test4", "Test5", "Test6", "Test7", "Test8", "Test9", "Test10");
+//For loop pointer
+var i;
+//imageSetup - For loop to construct HTML text to retrieve images and descriptions.
+var imageSetup;
+imageSetup = " "
+for (i=1; i < plants[0].length+1; i++)
+{
+imageSetup += '<img id="Plant' + i + 'Text" alt="Plant "' + i + ' src="plant' + i + '.jpg" width="300" onmouseover="PlantDesc(' + i + ')"> <br>';
+}
+document.write(imageSetup);
+</script>
+
+</body>
+</html>
+
