@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Performance Quiz 3</title>
+	<!-- Author: Yanel Pinto -->
+<script type="text/javascript">
+      
+        function changeText(text)
+        {
+            var display = document.getElementById('changeText');
+            display.innerHTML = "";
+            display.innerHTML = text;
+        }
+              
+        function defaultText()
+        {
+            var display = document.getElementById('defaultImage');
+            display.innerHTML = "";
+            display.innerHTML = "mouse over";
+        }
+          
+    </script>
+
+</head>
+	<body>
+		<div id="img-display">
+          
+      <img src="plant1.jpg" alt="planta 1" onmouseover="changeText('hola')" onmouseout="defaultImage()" width="300" />
+              
+      <img src="plant2.jpg" alt="planta 2" onmouseover="changeText('como estas?')" onmouseout="defaultImage()" width="300" />
+              
+      <img src="plant3.jpg" alt="planta 3" onmouseover="changeText('te amo')" onmouseout="defaultImage()" width="300" />
+              
+      <img src="plant4.jpg" alt="planta 4" onmouseover="changeText('Send me a message')" onmouseout="defaultImage()"  width="300"/>
+          
+</div>
+		
+</body>
+</html>
