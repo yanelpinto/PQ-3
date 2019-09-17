@@ -8,10 +8,7 @@
 <script language="JavaScript" type="text/javascript"> 
 	function myOnLoadFunction() {
 		var name = prompt("what is your name");
-		var myWindow = window.open("", name, "width=200,height=100");
-		myWindow.document.write("<p>Welcome: " + name + "</p>");
 		myWindow.status = name;
-
 }
 	
 	function PlantDesc (plantID){
@@ -25,7 +22,7 @@
 <script>
 var plants = new Array();
 //Setup Description Array
-plants[0] = new Array("I love this plant!", "Test2", "Test3", "Test4", "Test5", "Test6", "Test7", "Test8", "Test9", "Test10");
+plants[0] = new Array("I love this plant!", "This plant will look good at my living room", "I could put this one on my porch", "This could go in my bedroom", "This plant need a lot of water", "I do not like this plant", "This plant should have 6 hours of sun light", "This is one of my favorite plants", "I like the green colors of this plant", "Bee careful!");
 //For loop pointer
 var i;
 //imageSetup - For loop to construct HTML text to retrieve images and descriptions.
